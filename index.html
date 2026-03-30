@@ -1,80 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FitGuide by Divyansh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {margin:0; font-family: Arial; background:#f5f5f5;}
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
 
+/* HEADER */
 header {
-    background:#111;
-    color:white;
-    padding:20px;
-    text-align:center;
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-nav {
-    background:#222;
-    padding:10px;
-    text-align:center;
-}
 nav a {
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-    font-weight:bold;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
+/* LAYOUT */
 .container {
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
 }
 
+/* CONTENT */
+.content {
+    flex: 3;
+}
+
+/* CARDS */
 .post {
-    background:white;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:10px;
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.post h2 {margin-top:0;}
-
+/* BUTTON */
 .btn {
-    display:inline-block;
-    padding:10px 15px;
-    background:#111;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
+    display: inline-block;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
+/* SIDEBAR */
 .sidebar {
-    background:white;
-    padding:15px;
-    border-radius:10px;
-    margin-top:20px;
+    flex: 1;
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: fit-content;
 }
 
-footer {
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
-}
-
-/* Responsive */
-@media (min-width:768px){
-    .layout {
-        display:flex;
-        gap:20px;
+/* MOBILE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
-    .main {flex:3;}
-    .side {flex:1;}
 }
 </style>
 </head>
@@ -84,128 +81,49 @@ footer {
 <header>
     <h1>💪 FitGuide</h1>
     <p>Gym • Diet • Supplements for Beginners</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy.html">Privacy</a>
-</nav>
+<div class="container">
 
-<div class="container layout">
-</div>
+    <div class="content">
 
-<div class="main">
-</div>
+        <!-- POST 1 -->
+        <div class="post">
+            <h2>Best Whey Protein in India (Top 5)</h2>
+            <p>Top whey proteins for muscle gain and beginners.</p>
+            <a class="btn" href="#">Read More</a>
+        </div>
 
-<div class="post">
-    <h2>Best Whey Protein in India (Top 5)</h2>
+        <!-- POST 2 -->
+        <div class="post">
+            <h2>Cheap High Protein Diet Plan (India)</h2>
+            <p>Build muscle with budget-friendly foods like eggs, soya and milk.</p>
+            <a class="btn" href="#">Read More</a>
+        </div>
 
-    <h3>1. MuscleBlaze Biozyme Whey</h3>
-    <p>24g protein per scoop. Great for beginners and easy digestion.</p>
+        <!-- POST 3 -->
+        <div class="post">
+            <h2>Beginner Gym Workout Plan</h2>
+            <p>Simple weekly workout plan for beginners.</p>
+            <a class="btn" href="#">Read More</a>
+        </div>
 
-    <h3>2. Avvatar Whey Protein</h3>
-    <p>Up to 28g protein. Clean and high-quality Indian whey.</p>
+    </div>
 
-    <h3>3. Optimum Nutrition Gold Standard</h3>
-    <p>International brand with high purity and low fat.</p>
-
-    <h3>4. ON Performance Whey</h3>
-    <p>Affordable and balanced protein for daily use.</p>
-
-    <h3>5. MuscleBlaze Raw Whey</h3>
-    <p>Budget-friendly and unflavoured protein option.</p>
-
-</div>
-
-<div class="post">
-    <h2>Cheap High Protein Diet Plan (India)</h2>
-
-    <h3>1. Eggs</h3>
-    <p>1 egg = ~6g protein. Very cheap and best source. Eat 3–5 eggs daily.</p>
-
-    <h3>2. Soya Chunks</h3>
-    <p>100g = ~50g protein. One of the cheapest protein sources available.</p>
-
-    <h3>3. Milk</h3>
-    <p>1 glass = ~6-8g protein. Good for daily intake and easy to consume.</p>
-
-    <h3>4. Peanut Butter / Peanuts</h3>
-    <p>Affordable and calorie-dense. Helps in weight gain and muscle building.</p>
-
-    <h3>5. Dal (Lentils)</h3>
-    <p>Provides protein + carbs. Very common and budget-friendly Indian food.</p>
-
-    <h3>6. Paneer (Homemade)</h3>
-    <p>Rich in protein. You can make it at home to save money.</p>
-
-    <h3>Sample Daily Diet:</h3>
-    <p>
-    Breakfast: 3 Eggs + Milk<br>
-    Lunch: Dal + Rice + Soya<br>
-    Evening: Peanuts<br>
-    Dinner: Roti + Paneer
-    </p>
-    <p><b>Tip:</b> You don’t need expensive supplements. A proper diet with eggs, soya, and milk can easily complete your daily protein requirement.</p>
-    <p><b>Note:</b> Muscle gain depends on total protein intake and consistency, not just supplements.</p>
-</div>
-    
-<div class="post">
-    <h2>Beginner Gym Workout Plan (Full Week)</h2>
-
-    <h3>Day 1 – Chest + Triceps</h3>
-    <p>Bench Press, Push-ups, Tricep Dips</p>
-
-    <h3>Day 2 – Back + Biceps</h3>
-    <p>Pull-ups, Lat Pulldown, Bicep Curls</p>
-
-    <h3>Day 3 – Rest</h3>
-    <p>Recovery is important for muscle growth</p>
-
-    <h3>Day 4 – Shoulders</h3>
-    <p>Shoulder Press, Lateral Raises</p>
-
-    <h3>Day 5 – Legs</h3>
-    <p>Squats, Lunges, Leg Press</p>
-
-    <h3>Day 6 – Full Body</h3>
-    <p>Light workout covering all muscles</p>
-
-    <h3>Day 7 – Rest</h3>
-    <p>Complete rest and recovery</p>
-
-    <h3>Tips:</h3>
-    <p>
-    ✔ Focus on proper form<br>
-    ✔ Train 4–5 days a week<br>
-    ✔ Sleep 7–8 hours daily<br>
-    ✔ Stay consistent
-    </p>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>About FitGuide</h3>
+        <p>Helping beginners with gym, diet and supplements.</p>
+        <p>© 2026 FitGuide</p>
+    </div>
 
 </div>
-
-<div class="side">
-
-<div class="sidebar">
-    <h3>🔥 Popular</h3>
-    <p>Best Whey Under ₹2000</p>
-    <p>Weight Gain Tips</p>
-    <p>Protein Diet Plan</p>
-</div>
-
-<div class="sidebar">
-    <h3>💰 Recommended</h3>
-    <p>Check best supplements here</p>
-</div>
-
-</div>
-
-</div>
-
-<footer>
-    <p>© 2026 FitGuide by Divyansh</p>
-</footer>
 
 </body>
 </html>
